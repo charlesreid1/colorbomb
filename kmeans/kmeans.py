@@ -13,7 +13,7 @@ rtoh = lambda rgb: '#%s' % ''.join(('%02x' % p for p in rgb))
 
 def colorz(filename, n=3):
     img = Image.open(filename)
-    img.thumbnail((200, 200))
+    img.thumbnail((100, 100))
     w, h = img.size
 
     points = get_points(img)
@@ -72,15 +72,18 @@ def kmeans(points, k, min_diff):
 
 if __name__=="__main__":
 
-    with open('1.html','w') as f:
+    with open('kmeans.html','w') as f:
         f.write("<html>")
         f.write("<head>")
         f.write("<title>k-means colors</title>")
         f.write("</head>")
         f.write("<body>")
 
+        import glob
+        print glob.glob("*.jpg")
 
-        img_files = [str(j+1)+'.jpg' for j in range(3)]
+        img_files = glob.glob("*.jpg")
+
         Ncolors = 5
         w = 400
         for img_file in img_files:
