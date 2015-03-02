@@ -73,33 +73,35 @@ def kmeans(points, k, min_diff):
 if __name__=="__main__":
 
     with open('kmeans.html','w') as f:
-        f.write("<html>")
-        f.write("<head>")
-        f.write("<title>k-means colors</title>")
-        f.write("</head>")
-        f.write("<body>")
+        f.write("<html>\n")
+        f.write("<head>\n")
+        f.write("<title>k-means colors</title>\n")
+        f.write("</head>\n")
+        f.write("<body>\n")
 
         import glob
-        print glob.glob("*.jpg")
-
         img_files = glob.glob("*.jpg")
 
-        Ncolors = 5
+        Ncolors1 = 5
+        Ncolors2 = 9
         w = 400
         for img_file in img_files:
 
-            mycolorz = colorz(img_file,Ncolors)
+            for Ncolors in [Ncolors1,Ncolors2]:
 
-            cw = w/Ncolors
-            f.write('<img width="%dpx" height="%dpx" src="%s" />'%(w,w,img_file))
-            f.write('<div id="inner" style="overflow:hidden;width: 2000px">')
-            for color in mycolorz:
+                mycolorz = colorz(img_file,Ncolors)
 
-                f.write('<div style="float: left; width: %dpx; height: %dpx; background-color: %s;"></div>'%(cw,cw,color))
+                cw = w/Ncolors
+                f.write('<img width="%dpx" height="%dpx" src="%s" />\n'%(w,w,img_file))
+                f.write('<div id="inner" style="overflow:hidden;width: 2000px">\n')
+                for color in mycolorz:
 
-            f.write('</div>');
-            f.write("<p>&nbsp;</p>");
+                    f.write('<div style="float: left; width: %dpx; height: %dpx; background-color: %s;"></div>\n'%(cw,cw,color))
 
-        f.write("</body>")
-        f.write("</html>")
+                f.write('</div>\n');
+
+            f.write("<p>&nbsp;</p>\n");
+
+        f.write("</body>\n")
+        f.write("</html>\n")
 
