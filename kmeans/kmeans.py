@@ -81,26 +81,39 @@ if __name__=="__main__":
 
         import glob
         img_files = glob.glob("*.jpg")
+        img_files = ["01.jpg","02.jpg"]
 
         Ncolors1 = 5
         Ncolors2 = 9
         w = 400
         for img_file in img_files:
 
+            code_strings = []
+
+            f.write('<img width="%dpx" height="%dpx" src="%s" />\n'%(w,w,img_file))
             for Ncolors in [Ncolors1,Ncolors2]:
 
                 mycolorz = colorz(img_file,Ncolors)
 
                 cw = w/Ncolors
-                f.write('<img width="%dpx" height="%dpx" src="%s" />\n'%(w,w,img_file))
                 f.write('<div id="inner" style="overflow:hidden;width: 2000px">\n')
                 for color in mycolorz:
 
                     f.write('<div style="float: left; width: %dpx; height: %dpx; background-color: %s;"></div>\n'%(cw,cw,color))
 
-                f.write('</div>\n');
+                f.write('</div>\n')
 
-            f.write("<p>&nbsp;</p>\n");
+                code_strings.append( "var colors = ["+",".join(["'"+c+"'" for c in mycolorz])+"];" )
+
+            f.write("<p>Javascript strings:</p>")
+
+            for code_string in code_strings:
+                f.write("<p><code>")
+                f.write( code_string );
+                f.write("</code></p>\n")
+                f.write("<p>&nbsp;</p>\n")
+
+            f.write("<p>&nbsp;</p>\n")
 
         f.write("</body>\n")
         f.write("</html>\n")

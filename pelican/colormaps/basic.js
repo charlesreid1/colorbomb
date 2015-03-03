@@ -13,11 +13,16 @@ L.tileLayer('http://api.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_
 
 
 function getColor(d) {
-    // d should be between 0 and 1
-    // 
-    // 6 scale blues
-    var blue = ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(49,130,189)','rgb(8,81,156)'];
-    return blue[Math.round(d*6)];
+
+/////////////////////////////
+//// this is what we're here to do
+
+    var colors = ['#511f1b','#447489','#f72e40','#a02a20','#8d555c','#c41506','#fcab27','#fcd2c2','#f80e05'];
+    return colors[Math.round(d*colors.length)];
+
+/////////////////////////////
+
+
 }
 
 
@@ -36,7 +41,7 @@ function enhanceLayer(f,l){
         // http://leafletjs.com/reference.html#path-options
         l.setStyle({    
             fillColor: getColor(f.properties['derived_quantity']/10.0),
-            fillOpacity: 0.75,
+            fillOpacity: 0.65,
             stroke: false
         });
         console.log(f.properties['derived_quantity']/10.0);
@@ -44,5 +49,5 @@ function enhanceLayer(f,l){
 }
 
 
-var geoj = new L.geoJson.ajax(prefix+"carandom.geojson",{onEachFeature:enhanceLayer}).addTo(m);
+var geoj = new L.geoJson.ajax(prefix+"ca.geo.json",{onEachFeature:enhanceLayer}).addTo(m);
 

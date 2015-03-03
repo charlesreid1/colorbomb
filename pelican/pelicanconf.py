@@ -2,9 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+from util import *
+
+SITEURL = '/'
+
 AUTHOR = u'charlesreid1'
-SITENAME = u'SUNDROP'
+SITENAME = u'COLORBOMB'
 #SITEURL = '/sundrop'
+
+make_common_js(SITEURL,'colormaps/common.js')
 
 PATH = 'content'
 
@@ -17,9 +23,10 @@ DEFAULT_LANG = u'en'
 
 # --------------8<---------------------
 
-SITETAGLINE = "Building a page of map leaflets using Leaflet.js"
+SITETAGLINELONGER = "Creating cartographic colormaps from graffiti photos<br />using Python and k-means clustering"
+SITETAGLINE = "Creating cartographic colormaps from graffiti photos"
 
-THEME = 'sundrop-theme'
+THEME = 'colorbomb-theme'
 
 
 # This is stuff that goes into content/ that's copied into the website 
@@ -29,21 +36,26 @@ DISPLAY_PAGES_ON_MENU = False
 
 
 
-EXTRA_TEMPLATES_PATHS = ['maps']
+EXTRA_TEMPLATES_PATHS = ['colormaps']
 
 ###########################################
 # Maps
 
 TEMPLATE_PAGES = {}
 
+TEMPLATE_PAGES['index.html'] = 'index.html'
+
+
 # Common
 TEMPLATE_PAGES['mapstyles.css'] = 'mapstyles.css'
 TEMPLATE_PAGES['common.js'] = 'common.js'
 
+# Map data
+TEMPLATE_PAGES['ca.geo.json']  = 'ca.geo.json'
+
 # Maps
-### TEMPLATE_PAGES['educationca.html']  = 'educationca/index.html'
-### TEMPLATE_PAGES['educationca.css']   = 'educationca.css'
-### TEMPLATE_PAGES['educationca.js']    = 'educationca.js'
+TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
+TEMPLATE_PAGES['basic.js']    = 'basic.js'
 
 
 ### # Add all the geojson for education ca map
