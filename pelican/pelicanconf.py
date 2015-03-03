@@ -56,6 +56,7 @@ TEMPLATE_PAGES['ca.geo.json']  = 'ca.geo.json'
 # Maps
 TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
 TEMPLATE_PAGES['basic.js']    = 'basic.js'
+TEMPLATE_PAGES['basic.jpg']   = 'basic.jpg'
 
 
 ### # Add all the geojson for education ca map

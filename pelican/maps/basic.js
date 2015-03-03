@@ -44,7 +44,7 @@ function enhanceLayer(f,l){
             fillOpacity: 0.65,
             stroke: false
         });
-        console.log(f.properties['derived_quantity']/10.0);
+        //console.log(f.properties['derived_quantity']/10.0);
     }
 }
 
