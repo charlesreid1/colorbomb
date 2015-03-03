@@ -10,7 +10,7 @@ AUTHOR = u'charlesreid1'
 SITENAME = u'COLORBOMB'
 #SITEURL = '/sundrop'
 
-make_common_js(SITEURL,'colormaps/common.js')
+make_common_js(SITEURL,'maps/common.js')
 
 PATH = 'content'
 
