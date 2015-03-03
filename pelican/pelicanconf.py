@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
 from util import *
@@ -36,7 +34,7 @@ DISPLAY_PAGES_ON_MENU = False
 
 
 
-EXTRA_TEMPLATES_PATHS = ['colormaps']
+EXTRA_TEMPLATES_PATHS = ['maps']
 
 ###########################################
 # Maps
@@ -56,7 +54,6 @@ TEMPLATE_PAGES['ca.geo.json']  = 'ca.geo.json'
 # Maps
 TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
 TEMPLATE_PAGES['basic.js']    = 'basic.js'
-TEMPLATE_PAGES['basic.jpg']   = 'basic.jpg'
 
 
 ### # Add all the geojson for education ca map
