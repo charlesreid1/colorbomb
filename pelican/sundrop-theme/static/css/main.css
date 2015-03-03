@@ -1,3 +1,61 @@
+div.semitranswell.page1 {
+    background-color:rgba(210,210,210,0.7);
+}
+
+div.semitranswell.page2 {
+    background-color:rgba(210,210,210,0.7);
+}
+
+div.semitranswell.page3 {
+    background-color:rgba(210,210,210,0.7);
+}
+
+div.carousel {
+    font-weight: 400;
+}
+
+div.carousel h1.page1 {
+    font-size: 100px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
+div.carousel h1.page2 {
+    font-size: 100px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
+div.carousel h1.page3 {
+    font-size: 100px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
+div.carousel p {
+    font-size: 20px;
+}
+
+div.carousel a {
+    font-size: 42px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
+
+div.carousel .page1 {
+    color: #444;
+}
+
+div.carousel .page2 {
+    color: #ff9200;
+}
+
+div.carousel .page3 {
+    color: #461361;
+}
+
+
+
+
+
+
 div.jumbotron p#tagline {
     font-size: 48px;
     font-family: 'elfonturban_calligraphyRg';
