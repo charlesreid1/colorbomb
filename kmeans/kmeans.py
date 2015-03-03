@@ -81,17 +81,16 @@ if __name__=="__main__":
 
         import glob
         img_files = glob.glob("*.jpg")
-        img_files = ["01.jpg","02.jpg"]
+        #img_files = ["01.jpg","02.jpg"]
 
-        Ncolors1 = 5
-        Ncolors2 = 9
+        all_the_colors = [5,7,9,11]
         w = 400
         for img_file in img_files:
 
             code_strings = []
 
             f.write('<img width="%dpx" height="%dpx" src="%s" />\n'%(w,w,img_file))
-            for Ncolors in [Ncolors1,Ncolors2]:
+            for Ncolors in all_the_colors:
 
                 mycolorz = colorz(img_file,Ncolors)
 
