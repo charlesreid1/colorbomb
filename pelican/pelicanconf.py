@@ -2,13 +2,13 @@ from __future__ import unicode_literals
 
 from util import *
 
-SITEURL = '/'
+SITEURL = ''
 
 AUTHOR = u'charlesreid1'
 SITENAME = u'COLORBOMB'
 #SITEURL = '/sundrop'
 
-make_common_js(SITEURL,'maps/common.js')
+make_common_js('maps/common.js',SITEURL)
 
 PATH = 'content'
 

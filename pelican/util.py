@@ -1,3 +1,3 @@
-def make_common_js(url,dest):
+def make_common_js(dest,url):
     with open(dest,'w') as f:
-        f.write("var prefix = \"%s\";"%(url) );
+        f.write("var prefix = \"%s/\";"%(url) );
