@@ -1,1 +1,1 @@
-var prefix = "/sundrop/";
+var prefix = "/";

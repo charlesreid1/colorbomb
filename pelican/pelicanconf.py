@@ -6,7 +6,7 @@ SITEURL = ''
 
 AUTHOR = u'charlesreid1'
 SITENAME = u'COLORBOMB'
-SITEURL = '/sundrop'
+#SITEURL = '/sundrop'
 
 make_common_js('maps/common.js',SITEURL)
 
@@ -49,10 +49,11 @@ TEMPLATE_PAGES['mapstyles.css'] = 'mapstyles.css'
 TEMPLATE_PAGES['common.js'] = 'common.js'
 
 # Map data
-TEMPLATE_PAGES['ca.geo.json']  = 'ca.geo.json'
+TEMPLATE_PAGES['sfcensus.geo.json']  = 'sfcensus.geo.json'
 
 # Maps
 TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
+TEMPLATE_PAGES['basic.css']   = 'basic.css'
 TEMPLATE_PAGES['basic.js']    = 'basic.js'
 
 
