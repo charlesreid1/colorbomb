@@ -29,6 +29,7 @@ THEME = 'colorbomb-theme'
 
 # This is stuff that goes into content/ that's copied into the website 
 STATIC_PATHS = ['images']
+STATIC_PATHS = ['colormaps']
 
 DISPLAY_PAGES_ON_MENU = False
 
@@ -51,10 +52,17 @@ TEMPLATE_PAGES['common.js'] = 'common.js'
 # Map data
 TEMPLATE_PAGES['sfcensus.geo.json']  = 'sfcensus.geo.json'
 
-# Maps
-TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
-TEMPLATE_PAGES['basic.css']   = 'basic.css'
-TEMPLATE_PAGES['basic.js']    = 'basic.js'
+# Colormaps
+TEMPLATE_PAGES['colormaps.js']   = 'colormaps.js'
+TEMPLATE_PAGES['colormaps.css']  = 'colormaps.css'
+
+TEMPLATE_PAGES['bigredbutton.html']  = 'bigredbutton/index.html'
+TEMPLATE_PAGES['thejacka.html']  = 'thejacka/index.html'
+
+
+#TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
+#TEMPLATE_PAGES['basic.css']   = 'basic.css'
+#TEMPLATE_PAGES['basic.js']    = 'basic.js'
 
 
 ### # Add all the geojson for education ca map

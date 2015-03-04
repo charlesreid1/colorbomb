@@ -1,0 +1,17 @@
+
+
+{% extends 'base_map.html' %}
+
+{% block content %}
+{% set myslug="bigred" %}
+{% set mytitle="Big Red" %}
+{% set mydescr="Big Red is a theme based on lettering with a nice red-to-blue color gradient. Photograph taken in Lilac Alley in San Francisco's Mission District." %}
+{% set myjs="
+<script type='text/javascript'> 
+    var colors5 = [#f8c09c,#ed120c,#faa428,#5f474e,#fedbdb];
+    var colors7 = [#fedcdc,#f4100a,#862620,#fbc8a3,#f08564,#496e84,#fcad14];
+    var colors9 = [#e57871,#f30e03,#852620,#f61d31,#fba903,#fcc9a3,#fdb14a,#496f84,#fedcdc];
+</script>
+" %}
+{% include '_includes/colormaptemplate.html' %}
+{% endblock %}

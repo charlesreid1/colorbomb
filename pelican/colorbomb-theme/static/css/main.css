@@ -7,6 +7,12 @@ div .col-sm-4 {
     padding-bottom: 20px;
 }
 
+div.featurette h2 {
+    font-weight: bold;
+    font-size: 75px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
 div.marketing h1,
 div.marketing h2 {
     font-weight: bold;
