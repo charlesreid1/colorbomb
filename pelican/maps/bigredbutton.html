@@ -1,0 +1,17 @@
+
+
+{% extends 'base_map.html' %}
+
+{% block content %}
+{% set myslug="bigredbutton" %}
+{% set mytitle="Big Red Button" %}
+{% set mydescr="Big Red Button is a theme based on lettering with a nice red-to-blue color gradient. Photograph taken in Lilac Alley in San Francisco's Mission District." %}
+{% set myjs="
+<script type='text/javascript'> 
+    var colors5 = [#fccaac,#f71d0c,#b42213,#526f82,#602827];
+    var colors7 = [#f09775,#f30e03,#fcad14,#862620,#fed7c6,#f61f34,#496e84];
+    var colors9 = [#f29a77,#884348,#f70e03,#b61b0e,#511e1a,#fed7c7,#fcad14,#457388,#f72034];
+</script>
+" %}
+{% include '_includes/colormaptemplate.html' %}
+{% endblock %}

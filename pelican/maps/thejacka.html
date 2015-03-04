@@ -1,0 +1,17 @@
+
+
+{% extends 'base_map.html' %}
+
+{% block content %}
+{% set myslug="thejacka" %}
+{% set mytitle="The Jacka" %}
+{% set mydescr="The Jacka is based on a predominantly purple, green, and black graffiti panel. Photograph taken in Cypress Alley in San Francisco's Mission District." %}
+{% set myjs="
+<script type='text/javascript'> 
+    var colors5 = [#141015,#a69a1a,#acb0ab,#6b4469,#1f864c];
+    var colors7 = [#c28b4b,#077f79,#9ca602,#457f18,#abb2af,#6c436c,#140f15];
+    var colors9 = [#3a8f1d,#adb3af,#a2ab01,#07807a,#764a79,#c38c4b,#392f32,#7d850b,#110c13];
+</script>
+" %}
+{% include '_includes/colormaptemplate.html' %}
+{% endblock %}
