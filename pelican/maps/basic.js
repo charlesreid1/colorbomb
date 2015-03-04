@@ -10,6 +10,47 @@ function getColor9(d) {
     return colors9[Math.round(d*colors9.length)];
 }
 
+// all this copying-and-pasting and hard-coding of particular values
+// is a bit obscene, but I'm better with a text editor than I am with javascript.
+//
+function enhanceLayer5(f,l){
+    var out = [];
+    if (f.properties){
+        l.bindPopup(f.properties['name']);
+        // http://leafletjs.com/reference.html#path-options
+        l.setStyle({    
+            fillColor: getColor5(Math.random()),
+            fillOpacity: 0.65,
+            stroke: false
+        });
+    }
+}
+function enhanceLayer7(f,l){
+    var out = [];
+    if (f.properties){
+        l.bindPopup(f.properties['name']);
+        // http://leafletjs.com/reference.html#path-options
+        l.setStyle({    
+            fillColor: getColor7(Math.random()),
+            fillOpacity: 0.65,
+            stroke: false
+        });
+    }
+}
+function enhanceLayer9(f,l){
+    var out = [];
+    if (f.properties){
+        l.bindPopup(f.properties['name']);
+        // http://leafletjs.com/reference.html#path-options
+        l.setStyle({    
+            fillColor: getColor9(Math.random()),
+            fillOpacity: 0.65,
+            stroke: false
+        });
+    }
+}
+
+
 // photo size defined in main.css
 imgw = 350;
 
@@ -44,7 +85,7 @@ $(function(){
             $.el('h2',{'class':'mapcontainerheader','id':cp1}).text(Nscale+"-Scale Colormap")
         );
 
-        colormap_string = "var color"+c+" = [";
+        colormap_string = "var color"+Nscale+" = [";
         for (var m=0; m < Nscale; m++) {
             if(m>0) {
                 colormap_string = colormap_string + ",";
@@ -56,16 +97,16 @@ $(function(){
         // Add map div,
         // and JS code for this colormap
         $(".mapcontainerheader#"+cp1).after(
-            $.el('p',{'class':'nuthin'}).append(
-                $.el('code',{'class':'colormapcode'}).text(colormap_string)
-            )
-        ).after(
             $.el('div',{'class':'row'}).append(
                 $.el('div',{'class':'col-sm-12'}).append(
                     $.el('div',{'id':'map'+cp1}).text(' ').after(
                         $.el('p',{'class':'empty'}).text(' ')
                     )
                 )
+            )
+        ).after(
+            $.el('p',{'class':'nuthin'}).append(
+                $.el('code',{'class':'colormapcode'}).text(colormap_string)
             )
         );
     }
@@ -74,12 +115,25 @@ $(function(){
     for (var c=0; c < N; c++) {
 
         var cp1=c+1;
+        var colorscale = scales[c];
+        var Nscale = colorscale.length;
+        console.log(Nscale);
+
         $("div#map"+cp1).css("width","100%").css("height",400);
 
         // create the map, assign to the map div, and set it's lat, long, and zoom level (12)
         mapname = "map"+cp1;
         var m = L.map(mapname).setView([37.78, -122.45], 12);
 
+        var params = {};
+        if(Nscale==5) {
+            params = {onEachFeature:enhanceLayer5};
+        } else if(Nscale==7) {
+            params = {onEachFeature:enhanceLayer7};
+        } else if(Nscale==9) {
+            params = {onEachFeature:enhanceLayer9};
+        }
+        var geoj = new L.geoJson.ajax(prefix+"sfcensus.geo.json",params);
 
         // Add MapBox Tiles
         // https://www.mapbox.com/developers/api/maps/
@@ -88,25 +142,8 @@ $(function(){
             maxZoom: 18
         }).addTo(m);
 
-        // f = feature, l = layer
-        function enhanceLayer(f,l){
-        
-            // add popup
-            var out = [];
-            if (f.properties){
-                l.bindPopup(f.properties['name']);
-        
-                // http://leafletjs.com/reference.html#path-options
-                l.setStyle({    
-                    fillColor: getColor(Math.random()),
-                    fillOpacity: 0.65,
-                    stroke: false
-                });
-                //console.log(f.properties['derived_quantity']/10.0);
-            }
-        }
+        geoj.addTo(m);
 
-        var geoj = new L.geoJson.ajax(prefix+"sfcensus.geo.json",{onEachFeature:enhanceLayer}).addTo(m);
 
     }
 
