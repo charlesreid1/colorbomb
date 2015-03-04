@@ -6,7 +6,7 @@ SITEURL = ''
 
 AUTHOR = u'charlesreid1'
 SITENAME = u'COLORBOMB'
-#SITEURL = '/sundrop'
+#SITEURL = '/colorbomb'
 
 make_common_js('maps/common.js',SITEURL)
 

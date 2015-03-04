@@ -1,3 +1,24 @@
+div .col-sm-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.marketing h1,
+div.marketing h2 {
+    font-weight: bold;
+    font-size: 75px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
 /*****************************
  * color palette divs
  *****************************/
