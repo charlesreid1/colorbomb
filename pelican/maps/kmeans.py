@@ -81,7 +81,7 @@ if __name__=="__main__":
 
         import glob
         img_files = glob.glob("*.jpg")
-        img_files = ["01.jpg","02.jpg"]
+        #img_files = ["01.jpg","02.jpg"]
 
         all_the_colors = [5,7,9,11]
         w = 400
@@ -90,7 +90,6 @@ if __name__=="__main__":
             code_strings = []
 
             f.write('<img width="%dpx" height="%dpx" src="%s" />\n'%(w,w,img_file))
-            import pdb; pdb.set_trace()
             for Ncolors in all_the_colors:
 
                 mycolorz = colorz(img_file,Ncolors)

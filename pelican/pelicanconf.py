@@ -56,8 +56,13 @@ TEMPLATE_PAGES['sfcensus.geo.json']  = 'sfcensus.geo.json'
 TEMPLATE_PAGES['colormaps.js']   = 'colormaps.js'
 TEMPLATE_PAGES['colormaps.css']  = 'colormaps.css'
 
-TEMPLATE_PAGES['bigredbutton.html']  = 'bigredbutton/index.html'
-TEMPLATE_PAGES['thejacka.html']  = 'thejacka/index.html'
+TEMPLATE_PAGES['bigred.html'] = 'bigred/index.html'
+TEMPLATE_PAGES['elif.html'] = 'elif/index.html'
+TEMPLATE_PAGES['theride.html'] = 'theride/index.html'
+TEMPLATE_PAGES['thejacka.html'] = 'thejacka/index.html'
+TEMPLATE_PAGES['bricks.html'] = 'bricks/index.html'
+TEMPLATE_PAGES['zero.html'] = 'zero/index.html'
+TEMPLATE_PAGES['jaywalk.html'] = 'jaywalk/index.html'
 
 
 #TEMPLATE_PAGES['basic.html']  = 'basic/index.html'

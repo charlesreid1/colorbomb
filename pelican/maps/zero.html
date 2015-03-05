@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="zero" %}
+    {% set mytitle="Zero" %}
+    {% set mydescr="Zero is the color scheme that gave birth to the entire idea of colorbomb. The mural has a nice purple-to-silver gradient, as well as complementary shades of blue and green. This murla is from Lilac Alley in San Francisco's Mission District in 2014. This mural has since been painted over." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#333235','#6d686e','#babcc5','#08669b','#181513'];
+        var colors7 = ['#2e2a28','#0873ae','#151210','#c5c8ce','#8a8a96','#585152','#0a4970'];
+        var colors9 = ['#151110','#c5c8ce','#095482','#123651','#8a8a96','#0876b2','#166503','#322429','#595053'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

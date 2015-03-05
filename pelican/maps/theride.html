@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="theride" %}
+    {% set mytitle="The Ride" %}
+    {% set mydescr="The Ride is a green-and-orange theme from a mural on 24th Street in San Francisco's Mission District." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#928259','#f3f0ec','#524b33','#1f1610','#d5b985'];
+        var colors7 = ['#5e573c','#eab762','#3c3222','#c3bcac','#91855e','#f5f2ee','#150e0b'];
+        var colors9 = ['#575136','#f7f4f1','#f2c572','#7d7c59','#382c1f','#d9d3c8','#130d0a','#ada592','#ce8e3e'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

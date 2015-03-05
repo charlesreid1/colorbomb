@@ -1,13 +1,13 @@
 // prefix defined in common.js
 
 function getColor5(d) {
-    return colors5[Math.round(d*colors5.length)];
+    return colors5[Math.floor(d*colors5.length)];
 }
 function getColor7(d) {
-    return colors7[Math.round(d*colors7.length)];
+    return colors7[Math.floor(d*colors7.length)];
 }
 function getColor9(d) {
-    return colors9[Math.round(d*colors9.length)];
+    return colors9[Math.floor(d*colors9.length)];
 }
 
 // all this copying-and-pasting and hard-coding of particular values
@@ -117,6 +117,7 @@ $(function(){
         var cp1=c+1;
         var colorscale = scales[c];
         var Nscale = colorscale.length;
+        console.log(scales);
         console.log(Nscale);
 
         $("div#map"+cp1).css("width","100%").css("height",400);
@@ -147,35 +148,8 @@ $(function(){
 
     }
 
-
-    /*
-    $("img.displayphoto").after("<div id='inner'></div>");
-            
-    $("div#inner").css('overflow','hidden')
-                  .css('width',2000);
-    
-    */
-
-
-
-
     var N = colors5.length;
     var dim = imgw/N;
-
-
-
-
-    /*
-    for (var c=0; c < N; c++) {
-        $("div#inner").append("<div class='colorp' id='colorp"+c+"'>&nbsp;</div>");
-        $("#colorp"+c).css('background-color',colors5[c])
-                      .css('float','left')
-                      .css('width', dim)
-                      .css('height',dim);
-    }        
-    */
-
-
 
     /*
      *
