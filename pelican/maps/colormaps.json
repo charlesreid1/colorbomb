@@ -25,6 +25,38 @@
     },
     "zero": {
         "title": "Zero",
-        "description":"Zero is the color scheme that gave birth to the entire idea of colorbomb. The mural has a nice purple-to-silver gradient, as well as complementary shades of blue and green. This murla is from Lilac Alley in San Francisco's Mission District in 2014. This mural has since been painted over."
+        "description":"Zero is the color scheme that gave birth to the entire idea of colorbomb. The mural has a nice purple-to-silver gradient, as well as complementary shades of blue and green. This mural is from Lilac Alley in San Francisco's Mission District in 2014. This mural has since been painted over."
+    },
+    "traxter": {
+        "title":"Traxter",
+        "description":"Traxter is a Lilac Alley mural with pink and blue. Photo taken in San Francisco's Mission District."
+    },
+    "snot": { 
+        "title":"Snot",
+        "description":"This very special mural appeared shortly before the Giants reached the baseball playoffs in 2014. Photo taken in Lilac Alley in San Francisco's Mission District."
+    },
+    "rpes": {
+        "title":"RPES",
+        "description":"RPES was a mural in Lilac Alley that has since been painted over. Because this mural was directly behind Dianda's Bakery on Mission Street, the smell of delicious cookies would overpower the stench of urine and garbage that pervaded the rest of the alley. Photo taken in Lilac Alley in San Francisco's Mission District."
+    },
+    "kickit": {
+        "title":"Kick It",
+        "description":"Kick It was a phtoo I snapped in Lucky Alley on trash day. I had to move a bunch of garbage and recycling bins to get a good shot of the lettering and colors. Graffiti mural is in Lucky Alley in San Francisco's Mission District."
+    },
+    "hassad": {
+        "title":"Has Sad",
+        "description":"Lots of vans in the Mission District are covered with graffiti, so you constantly see a revolving set of truck murals. These often overlap with names, shapes, and faces you see in graffiti murals in alleys. This photo of a truck was snapped in front of Philz Coffee on 24th Street and Folsom in San Francisco."
+    },
+    "fireant": {
+        "title":"Fire Ant",
+        "description":"This big hook-and-ladder fire truck often drives up and down 24th Street. Here, I got a picture of it stopped at the corner of 24th and Folsom on a Sunday morning. The San Francisco Fire Department firefighters were busy making a Philz Coffee run."
+    },
+    "dream": {
+        "title":"Dream",
+        "description":"This beautiful mural was located in a nook in Lilac Alley, bookended by two more large murals on the left and right. Photo taken in Lilac Alley in San Francisco's Mission District."
+    },
+    "phonebooth": {
+        "title":"Phone Booth",
+        "description":"The Phone Booth is a little hole-in-the-wall bar (obviously) on 25th and Van Ness in San Francisco. The place has cold PBR on draft for 3 bucks, so its a popular watering hole for Giants fans during baseball season. This place was crazy during the World Series."
     }
 }

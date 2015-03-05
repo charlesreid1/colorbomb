@@ -4,7 +4,7 @@ save_as: author.html
 
 <img width="300px" src="images/author.jpg" alt="Photo of the Author" />
 
-Sundrop is authored by Charles Reid.
+Colorbomb is authored by Charles Reid.
 
 Charles is a chemical engineer who tinkers with Python in his free time.
 

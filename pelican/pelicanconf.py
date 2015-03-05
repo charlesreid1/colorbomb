@@ -6,7 +6,7 @@ SITEURL = ''
 
 AUTHOR = u'charlesreid1'
 SITENAME = u'COLORBOMB'
-#SITEURL = '/colorbomb'
+SITEURL = '/colorbomb'
 
 make_common_js('maps/common.js',SITEURL)
 
@@ -28,8 +28,8 @@ THEME = 'colorbomb-theme'
 
 
 # This is stuff that goes into content/ that's copied into the website 
-STATIC_PATHS = ['images']
 STATIC_PATHS = ['colormaps']
+STATIC_PATHS = ['images']
 
 DISPLAY_PAGES_ON_MENU = False
 

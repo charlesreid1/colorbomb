@@ -1,1 +1,1 @@
-var prefix = "/";
+var prefix = "/colorbomb/";
