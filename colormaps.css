@@ -1,0 +1,59 @@
+.axis path,
+.axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.axislabel {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.legend rect {
+    fill:white;
+    stroke:none;
+    opacity:0.8; 
+}
+
+.ordinalkey rect {
+    fill:white;
+    stroke:none;
+    opacity:0.8; 
+}
+
+
+path.slice{
+    stroke-width:2px;
+}
+
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+
+
+svg {
+  font: 12px sans-serif;
+}
+
+.caption {
+  font-weight: bold;
+}
+
+.key path {
+  display: none;
+}
+
+.key line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

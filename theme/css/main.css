@@ -1,9 +1,58 @@
+
+div.well h1 {
+    font-size: 52px;
+    font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 9px;
+}
+
+code.colormapcode {
+    font-size: 12px;
+}
+
+div .col-sm-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+div.featurette {
+    width: 300px;
+    text-align: center;
+}
+
+div.featurette h2 {
+    font-weight: bold;
+    font-size: 75px;
+    font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 5px;
+}
+
+div.marketing h1,
+div.marketing h2 {
+    font-weight: bold;
+    font-size: 75px;
+    font-family: 'elfonturban_calligraphyRg';
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
 /*****************************
  * color palette divs
  *****************************/
+
+img.featuretteimg {
+    width: 150px;
+    height: 150px;
+}
+
 div#inner {
-    overflow: hidden;
-    width: 2000px;
+    /*overflow: hidden;*/
+    width: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.colorp {
     float: left;
@@ -28,7 +77,9 @@ body {
 
 div.jumbotron {
     padding: 15px;
-    background-color:rgba(230,230,230,0.9);
+    padding-top: 0px;
+    margin-bottom: 0px;
+    background-color:rgba(230,230,230,0);
 }
 
 div.semitranswell.page1 {
@@ -56,6 +107,7 @@ div.carousel h1.page2,
 div.carousel h1.page3 {
     font-size: 100px;
     font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 9px;
 }
 
 div.carousel p {
@@ -65,6 +117,7 @@ div.carousel p {
 div.carousel a {
     font-size: 42px;
     font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 9px;
 }
 
 
@@ -108,11 +161,13 @@ div.carousel .page3 {
 div.jumbotron p#tagline {
     font-size: 48px;
     font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 2px;
 }
 
 div.jumbotron h1 {
     font-size: 100px;
     font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 9px;
 }
 div.jumbotron h1 i {
     font-size:72px;
@@ -121,11 +176,13 @@ div.jumbotron h1 i {
 
 .navbar-default .navbar-nav > li > a {
     font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 2px;
     font-size: 50px;
 }
 
 .navbar-default .navbar-brand {
     font-family: 'elfonturban_calligraphyRg';
+    letter-spacing: 2px;
     font-size: 32px;
 }
 
