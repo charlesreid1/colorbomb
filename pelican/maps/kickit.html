@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="kickit" %}
+    {% set mytitle="Kick It" %}
+    {% set mydescr="Kick It was a photo I snapped in Lucky Alley on trash day. I had to move a bunch of garbage and recycling bins to get a good shot of the lettering and colors. Graffiti mural is in Lucky Alley in San Francisco's Mission District." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#11121a','#b45011','#1f3246','#a7acbd','#3e7985'];
+        var colors7 = ['#d25f0f','#22465f','#51868b','#713318','#0c0c12','#152435','#acb0c2'];
+        var colors9 = ['#668565','#713014','#d35d0d','#0c0b11','#c4c9d2','#0a75ad','#9296b5','#142132','#233e54'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

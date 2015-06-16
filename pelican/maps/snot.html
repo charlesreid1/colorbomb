@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="snot" %}
+    {% set mytitle="Snot" %}
+    {% set mydescr="This very special mural appeared shortly before the Giants reached the baseball playoffs in 2014. Photo taken in Lilac Alley in San Francisco's Mission District." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#cc6d0f','#0d0b0e','#4d3c32','#858e72','#b1bdca'];
+        var colors7 = ['#4a2b17','#b3bdc9','#39424f','#0b0a0e','#cf8b20','#915127','#65838e'];
+        var colors9 = ['#37414e','#dc6a05','#b3becc','#bcaf48','#0b0a0e','#836227','#512b17','#618393','#da0e8b'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

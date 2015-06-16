@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="rpes" %}
+    {% set mytitle="RPES" %}
+    {% set mydescr="RPES was a mural in Lilac Alley that has since been painted over. Because this mural was directly behind Dianda's Bakery on Mission Street, the smell of delicious cookies would overpower the stench of urine and garbage that pervaded the rest of the alley. Photo taken in Lilac Alley in San Francisco's Mission District." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#7d1c26','#21191e','#c5c5d4','#396e85','#a8825b'];
+        var colors7 = ['#a19baf','#ab7542','#374a57','#1e1217','#338caa','#7b1722','#dcd9e1'];
+        var colors9 = ['#a79bae','#1a0f13','#67141b','#293a44','#3495b4','#a7a02d','#475e6f','#dcdae3','#ab2f3e'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

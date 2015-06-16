@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="traxter" %}
+    {% set mytitle="Traxter" %}
+    {% set mydescr="Traxter is a Lilac Alley mural with pink and blue. Photo taken in San Francisco's Mission District." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#097ec6','#0e273b','#832a7a','#7fb5dd','#ae983d'];
+        var colors7 = ['#0461b3','#1f3a53','#081f2f','#af983c','#862a7b','#87b6dc','#0f96d6'];
+        var colors9 = ['#0a1e2d','#9e398e','#672261','#189fda','#037ecb','#0559a8','#af9b36','#88b9de','#0d3a54'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

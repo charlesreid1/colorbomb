@@ -4,7 +4,7 @@ import re
 import kmeans
 
 do_kmeans = True
-do_pelicanconf = False
+do_pelicanconf = True
 
 """
 Colorbomb Colormap Page Generator
@@ -79,13 +79,6 @@ splash_table_html = """
                     """
 
 
-if do_pelicanconf:
-
-    print "Paste the following into your pelicanconf.py file:\n"
-
-    for k in d.keys():
-
-        print "TEMPLATE_PAGES['"+k+".html'] = '"+k+"/index.html'"
 
 
 
@@ -235,4 +228,18 @@ if do_kmeans:
     print ""
     print "All done"
     print ""
+
+
+
+
+
+
+if do_pelicanconf:
+
+    print "Paste the following into your pelicanconf.py file:\n"
+
+    for k in d.keys():
+
+        print "TEMPLATE_PAGES['"+k+".html'] = '"+k+"/index.html'"
+
 

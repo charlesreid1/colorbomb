@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="hassad" %}
+    {% set mytitle="Has Sad" %}
+    {% set mydescr="Lots of vans and trucks in the Mission District are covered with graffiti, so you constantly see a revolving set of truck murals. These often overlap with names, shapes, and faces you see in graffiti murals in alleys. This photo of a truck was snapped in front of Philz Coffee on 24th Street and Folsom in San Francisco." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#edeaca','#b2aa68','#1b0f0a','#6f6e3b','#3a361a'];
+        var colors7 = ['#504f27','#d1ca90','#a69d59','#312b15','#76743f','#f6f5e4','#190d09'];
+        var colors9 = ['#9a8435','#626435','#7f8458','#d8d19b','#b2ab68','#180d09','#464521','#f8f7e8','#2e2713'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

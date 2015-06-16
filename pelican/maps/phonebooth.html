@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="phonebooth" %}
+    {% set mytitle="Phone Booth" %}
+    {% set mydescr="The Phone Booth is a little hole-in-the-wall bar (obviously) on 25th and Van Ness in San Francisco. The place has cold PBR on draft for 3 bucks, so its a popular watering hole for Giants fans during baseball season. This place was crazy during the 2014 World Series." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#caae1d','#cfc77d','#240f08','#736c22','#473011'];
+        var colors7 = ['#160806','#998f38','#371a0d','#d3cb82','#6b641a','#4d3913','#dbbb18'];
+        var colors9 = ['#d9d188','#6f691d','#ab910f','#524314','#402510','#2e130a','#a09a54','#e4c31c','#100705'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

@@ -1,0 +1,18 @@
+
+    
+    {% extends 'base_map.html' %}
+    
+    {% block content %}
+    {% set myslug="dream" %}
+    {% set mytitle="Dream" %}
+    {% set mydescr="This beautiful mural was located in a nook in Lilac Alley, bookended by two more large murals on the left and right. Photo taken in Lilac Alley in San Francisco's Mission District." %}
+    {% set myjs="
+    <script type='text/javascript'> 
+        var colors5 = ['#b6c6cf','#1578ba','#17161f','#0e3e66','#97664e'];
+        var colors7 = ['#7a4b47','#0b4b7f','#cfac77','#adc8df','#132a3f','#150f16','#167dbf'];
+        var colors9 = ['#c6d6e4','#6ea6cd','#110f15','#0c4b7d','#0d2b41','#8e6053','#512931','#dbb677','#0a76bc'];
+    </script>
+    " %}
+    {% include '_includes/colormaptemplate.html' %}
+    {% endblock %}
+    

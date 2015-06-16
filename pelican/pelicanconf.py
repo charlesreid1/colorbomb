@@ -28,8 +28,7 @@ THEME = 'colorbomb-theme'
 
 
 # This is stuff that goes into content/ that's copied into the website 
-STATIC_PATHS = ['colormaps']
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['colormaps','images']
 
 DISPLAY_PAGES_ON_MENU = False
 
@@ -60,9 +59,17 @@ TEMPLATE_PAGES['bigred.html'] = 'bigred/index.html'
 TEMPLATE_PAGES['elif.html'] = 'elif/index.html'
 TEMPLATE_PAGES['theride.html'] = 'theride/index.html'
 TEMPLATE_PAGES['thejacka.html'] = 'thejacka/index.html'
+TEMPLATE_PAGES['kickit.html'] = 'kickit/index.html'
 TEMPLATE_PAGES['bricks.html'] = 'bricks/index.html'
+TEMPLATE_PAGES['rpes.html'] = 'rpes/index.html'
+TEMPLATE_PAGES['snot.html'] = 'snot/index.html'
+TEMPLATE_PAGES['fireant.html'] = 'fireant/index.html'
+TEMPLATE_PAGES['hassad.html'] = 'hassad/index.html'
 TEMPLATE_PAGES['zero.html'] = 'zero/index.html'
+TEMPLATE_PAGES['phonebooth.html'] = 'phonebooth/index.html'
 TEMPLATE_PAGES['jaywalk.html'] = 'jaywalk/index.html'
+TEMPLATE_PAGES['dream.html'] = 'dream/index.html'
+TEMPLATE_PAGES['traxter.html'] = 'traxter/index.html'
 
 
 #TEMPLATE_PAGES['basic.html']  = 'basic/index.html'
