@@ -13,23 +13,53 @@ Cluster = namedtuple('Cluster', ('points', 'center', 'n'))
 rtoh = lambda rgb: '#%s' % ''.join(('%02x' % p for p in rgb))
 
 def colorz(filename, n=3):
+    """
+    This function does the following:
+    - Convert the full image to a 100 x 100 thumbnail
+    - Extract a list of all colors in the thumbnail
+    - Perform k-means clustering on all colors
+    - Apply the RGB decimal-to-hex lambda (above) to each cluster
+    """
+    
+    # Convert the full image to a 100 x 100 thumbnail
     img = Image.open(filename)
     img.thumbnail((100, 100))
     w, h = img.size
 
+    # Extract a list of all colors in the thumbnail
     points = get_points(img)
+    
+    # Perform k-means clustering on all colors
     clusters = kmeans(points, n, 1)
+    
+    # Apply the RGb decimal-to-hex lambda to each cluster
     rgbs = [map(int, c.center.coords) for c in clusters]
     return map(rtoh, rgbs)
 
 def get_points(img):
+    """
+    This function does the following:
+    - Iterate over each pixel
+    - Convert each pixel to a PIL Point object with the color embedded
+    """
     points = []
+    
+    # Get the size
     w, h = img.size
+    
+    # Iterate over each pixel
     for count, color in img.getcolors(w * h):
+        # Create a Point object with this pixel's colors embedded
         points.append(Point(color, 3, count))
+        
+    # Return all the points
     return points
 
 def euclidean(p1, p2):
+    """
+    Compute the euclidean distance between two points
+    (k-means clustering uses this metric to determine the 'mean' clusters)
+    """
     return sqrt(sum([
         (p1.coords[i] - p2.coords[i]) ** 2 for i in range(p1.n)
     ]))
