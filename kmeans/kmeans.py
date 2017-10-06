@@ -9,6 +9,7 @@ except ImportError:
 Point = namedtuple('Point', ('coords', 'n', 'ct'))
 Cluster = namedtuple('Cluster', ('points', 'center', 'n'))
 
+# Lambda function: convert 0-255 decimal value to 000-FFF hex value
 rtoh = lambda rgb: '#%s' % ''.join(('%02x' % p for p in rgb))
 
 def colorz(filename, n=3):
